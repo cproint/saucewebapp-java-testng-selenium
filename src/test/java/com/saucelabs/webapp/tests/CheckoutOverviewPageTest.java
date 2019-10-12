@@ -34,7 +34,7 @@ public class CheckoutOverviewPageTest extends TestBase {
 	public void verifyProductLabelDisplayed(String browser, String version, String os, Method method)
 			throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-		createDriver(browser, version, os, method.getName(), "ShoppingCartPageTests");
+		createDriver(browser, version, os, method.getName(), "CheckoutOverviewPageTests");
 		WebDriver driver = getWebDriver();
 
 		annotate("Open SauceDemo URL...");

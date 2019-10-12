@@ -138,7 +138,7 @@ public class LoginPageTest extends TestBase {
 	public void verifyLoginButtonIsEnabled(String browser, String version, String os, Method method)
 			throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
-		createDriver(browser, version, os, method.getName(), "LoginPage_Tests");
+		createDriver(browser, version, os, method.getName(), "LoginPageTests");
 		WebDriver driver = getWebDriver();
 
 		annotate("Open SauceDemo App URL...");

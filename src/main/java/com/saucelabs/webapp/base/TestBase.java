@@ -120,11 +120,11 @@ public class TestBase {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		// set desired capabilities to launch appropriate browser on Sauce
-		capabilities.setCapability("browserName", browser);
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, browser);
 		capabilities.setCapability(CapabilityType.VERSION, version);
 		capabilities.setCapability(CapabilityType.PLATFORM_NAME, os);
 		capabilities.setCapability("name", methodName);
-		capabilities.setCapability("tags", "someTest");
+		capabilities.setCapability("tags", tagName);
 
 		capabilities.setCapability("public", "team");
 		// capabilities.setCapability("extendedDebugging", "true");
