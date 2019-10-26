@@ -1,6 +1,5 @@
 package com.saucelabs.webapp.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -38,8 +37,7 @@ public class ShoppingCartPage {
 
 	public CheckoutInformationPage clickCheckoutButton() {
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", checkoutButton);
+		checkoutButton.click();
 		return new CheckoutInformationPage(driver);
 	}
 

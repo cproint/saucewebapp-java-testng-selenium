@@ -29,7 +29,7 @@ public class CheckoutInformationPageTest extends TestBase {
 	CheckoutInformationPage checkoutInformationPage;
 
 	@Test(dataProvider = "hardCodedBrowsers", enabled = true)
-	public void verifyProductLabelDisplayed(String browser, String version, String os, Method method)
+	public void verifyFirstNameTestBoxIsDisplayed(String browser, String version, String os, Method method)
 			throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
 		createDriver(browser, version, os, method.getName(), "CheckoutInformationPageTests");

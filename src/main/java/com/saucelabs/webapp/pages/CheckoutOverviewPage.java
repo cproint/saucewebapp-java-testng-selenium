@@ -6,11 +6,13 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.saucelabs.webapp.base.TestBase;
+
 /**
  * @author mtulugu
  *
  */
-public class CheckoutOverviewPage {
+public class CheckoutOverviewPage extends TestBase {
 
 	public WebDriver driver;
 	public static String url = "https://www.saucedemo.com";

@@ -32,7 +32,7 @@ public class ProductsPage extends TestBase {
 	@CacheLookup
 	private WebElement shoppingCartIcon;
 
-	@FindBy(xpath = "//div[@class='inventory_list']/div[1]/div[@class='pricebar']/button[.='ADD TO CART']")
+	@FindBy(className = "btn_primary")
 	@CacheLookup
 	private WebElement addToCartButton;
 
@@ -43,9 +43,9 @@ public class ProductsPage extends TestBase {
 
 	// Actions
 
-	public boolean isProductLabelDisplayed() {
+	public boolean isProductSortContainerDisplayed() {
 
-		return productLabel.isDisplayed();
+		return productSortContainer.isDisplayed();
 	}
 
 	public ShoppingCartPage clickShoppingCartIcon() {

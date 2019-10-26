@@ -31,7 +31,7 @@ public class CheckoutOverviewPageTest extends TestBase {
 	CheckoutOverviewPage checkoutOverviewPage;
 
 	@Test(dataProvider = "hardCodedBrowsers", enabled = true)
-	public void verifyProductLabelDisplayed(String browser, String version, String os, Method method)
+	public void verifyFinishButtonIsDisplayed(String browser, String version, String os, Method method)
 			throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
 		createDriver(browser, version, os, method.getName(), "CheckoutOverviewPageTests");

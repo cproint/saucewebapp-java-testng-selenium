@@ -41,7 +41,7 @@ public class ProductsPageTest extends TestBase {
 
 		annotate("On Products Page...");
 		annotate("Asserting Product Label is displayed");
-		assertTrue(productsPage.isProductLabelDisplayed());
+		assertTrue(productsPage.isProductSortContainerDisplayed());
 	}
 
 }

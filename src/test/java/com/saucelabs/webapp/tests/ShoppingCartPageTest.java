@@ -27,7 +27,7 @@ public class ShoppingCartPageTest extends TestBase {
 	ShoppingCartPage shoppingCartPage;
 
 	@Test(dataProvider = "hardCodedBrowsers", enabled = true)
-	public void verifyProductLabelDisplayed(String browser, String version, String os, Method method)
+	public void verifyCheckoutButtonIsDisplayed(String browser, String version, String os, Method method)
 			throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
 		createDriver(browser, version, os, method.getName(), "ShoppingCartPageTests");
